@@ -1,0 +1,53 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+div#buttons {
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+  width: 55px;
+  height: 50px;
+  border: 3px solid #cf3a3a;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #e00b0b;
+  border-radius: 30%;
+  padding: 5px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+div.znaczek {
+  display: grid;
+  grid-template-columns: 70px 330px;
+  align-items: center;
+  justify-content: flex-start;
+  width:600px;
+  padding-bottom: 23px;
+  font-size:18px;
+  padding-left: 5px;
+  padding-top: 8px;
+  border-radius: 15px;
+  vertical-align:baseline;
+}
+
+div.znaczek p {
+  width: fit-content;
+  position: relative;
+  left: 20px;
+  margin: 28px 0;
+}
+.zadania-container {
+  display: flex;
+  flex-direction: column;
+}
