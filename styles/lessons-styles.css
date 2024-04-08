@@ -86,7 +86,12 @@ td {
 }
 
 @media (max-width: 660px) {
-    .forward-backward-buttons-container {
+    .lesson-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forward-backward-buttons:nth-child(even) {
         display: none;
     }
 
