@@ -185,6 +185,10 @@ footer img {
     height: 25px;
 }
 
+.br-footer {
+    display: none;
+}
+
 @media (max-width: 660px) {
 
     body {
@@ -280,5 +284,9 @@ footer img {
     .mobile-lesson-menu-active {
         transform: translateX(0);
         position: fixed;
+    }
+
+    .br-footer {
+        display: block;
     }
 }

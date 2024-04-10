@@ -5,7 +5,7 @@ button {
 }
 
 div#buttons {
-  font-size: 28px;
+  font-size: max(22px, 1.8vw);
   text-align: center;
   cursor: pointer;
   width: 55px;
@@ -32,10 +32,7 @@ div.znaczek {
   grid-template-columns: 70px 330px;
   align-items: center;
   justify-content: flex-start;
-  width:600px;
   padding-bottom: 23px;
-  font-size:18px;
-  padding-left: 5px;
   padding-top: 8px;
   border-radius: 15px;
   vertical-align:baseline;
