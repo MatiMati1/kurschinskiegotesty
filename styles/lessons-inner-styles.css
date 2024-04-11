@@ -48,3 +48,18 @@ div.znaczek p {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 660px) {
+  #container {
+    margin-left: 10px;
+  }
+
+  div#buttons {
+    width: 45px;
+    height: 40px;
+  }
+
+  div.znaczek p {
+    left: 10px;
+  }
+}
