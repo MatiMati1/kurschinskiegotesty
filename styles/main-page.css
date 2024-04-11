@@ -80,11 +80,6 @@
         display: none;
     }
 
-    .kurs1,
-    .kurs2 {
-        font-size: 25px;
-    }
-
     .kurs:nth-child(2) {
         margin-bottom: 30px;
     }
