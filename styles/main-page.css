@@ -1,15 +1,17 @@
-body{
-    overflow: hidden;
-}
 .display{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display:flex;
+    justify-content: space-around;
 }
+
+.kurs_text {
+    display: flex;
+    flex-direction: column;
+}
+
 .kurs{
-    margin-top: 15px;
-    width: 50%;
-    padding: 10px 25px;
+    margin: 20px;
+    padding: 15px;
+    width: clamp(400px, 40vw, 750px);
     font-size: 1.1vw;
     border-radius: 20px;
     border-style: solid;
@@ -23,26 +25,22 @@ body{
     transform: scale(105%);
 }
 .kurs1{
-    font-size: larger;
+    font-size: 18px;
     color:#c39712;
 }
 .kurs2{
-    font-size: large;
+    font-size: 18px;
     color:black;
 }
 .kurs2 a{
     color:rgb(188, 18, 188);
 }
 .kurs_logo{
-    float: right;
     margin-top: 15px;
 }
 .kurs_logo img{
-    width: 500px;
-    height: 500px;
-}
-.kurs_text{
-    float: left;
+    width: 450px;
+    height: 450px;
 }
 .linki{
     color:black;
@@ -64,4 +62,25 @@ body{
 }
 .linki a img {
     margin-right: 10px;
+}
+
+@media (max-width: 660px) {
+    .display {
+        align-items: center;
+    }
+
+    .kurs {
+        border: none;
+        margin: 0 30px;
+        padding: 0;
+        width: calc(100% - 60px);
+    }
+
+    .kurs_logo {
+        display: none;
+    }
+
+    .kurs:nth-child(2) {
+        margin-bottom: 30px;
+    }
 }

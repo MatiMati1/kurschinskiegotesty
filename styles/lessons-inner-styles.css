@@ -5,45 +5,61 @@ button {
 }
 
 div#buttons {
-  font-size: 30px;
+  font-size: clamp(22px, 1.8vw, 30px);
   text-align: center;
-  width: 60px;
+  cursor: pointer;
+  width: 55px;
   height: 50px;
   border: 3px solid #cf3a3a;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(0, 0, 0);
+  color: white;
   background-color: #e00b0b;
   border-radius: 30%;
   padding: 5px;
-  float:left;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   
 }
 
 div.znaczek {
-  font-weight: bold; 
-  float:left;
-  
-  width:600px;
+  display: grid;
+  grid-template-columns: 70px 255px;
+  align-items: center;
+  justify-content: flex-start;
   padding-bottom: 23px;
-  font-size:30px;
-  padding-left: 5px;
   padding-top: 8px;
-  text-align:center;
-  background-color: rgb(207, 178, 47);
   border-radius: 15px;
-  border: 3px solid rgb(177, 150, 32);
   vertical-align:baseline;
-  
 }
 
-hr{
-  color: black;
-  height: 2px;
-  background-color: black;
-  border: 1px black solid;
-  width: 595px;
+div.znaczek p {
+  width: fit-content;
+  position: relative;
+  left: 20px;
+  margin: 28px 0;
+}
+.zadania-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 660px) {
+  #container {
+    margin-left: 10px;
+  }
+
+  div#buttons {
+    width: 45px;
+    height: 40px;
+  }
+
+  div.znaczek p {
+    left: 10px;
+  }
 }

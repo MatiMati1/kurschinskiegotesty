@@ -23,24 +23,18 @@ const mobile_menu_opener_1 = document.querySelector('.mobile-menu-opening-1');
 const mobile_menu_opener_2 = document.querySelector('.mobile-menu-opening-2');
 const mobile_menu_opener_3 = document.querySelector('.mobile-menu-opening-3');
 const mobile_menu_opener_4 = document.querySelector('.mobile-menu-opening-4');
-const mobile_menu_opener_5 = document.querySelector('.mobile-menu-opening-5');
-const mobile_menu_opener_6 = document.querySelector('.mobile-menu-opening-6');
 
 //blok kodu definiujący guziki X do zamykania mobilnych menu
 const mobile_menu_close_1 = document.querySelector(".mobile-menu-close-icon-1");
 const mobile_menu_close_2 = document.querySelector(".mobile-menu-close-icon-2");
 const mobile_menu_close_3 = document.querySelector(".mobile-menu-close-icon-3");
-const mobile_menu_close_4 = document.querySelector(".mobile-menu-close-icon-4");
-const mobile_menu_close_5 = document.querySelector(".mobile-menu-close-icon-5");
-const mobile_menu_close_6 = document.querySelector(".mobile-menu-close-icon-6");
+const mobile_menu_close_4 = document.querySelector(".mobile-menu-close-icon-4");;
 
 //blok kodu definiujący mobilne menu
 const mobile_menu_1 = document.querySelector('.mobile-menu-1');
 const mobile_menu_2 = document.querySelector('.mobile-menu-2');
 const mobile_menu_3 = document.querySelector('.mobile-menu-3');
 const mobile_menu_4 = document.querySelector('.mobile-menu-4');
-const mobile_menu_5 = document.querySelector('.mobile-menu-5');
-const mobile_menu_6 = document.querySelector('.mobile-menu-6');
 
 //event listenery wywołujące funkcje do otwierania menu
 mobile_menu_opener_1.addEventListener('click', function() {mobile_menu_toggle(1)});
@@ -55,12 +49,6 @@ mobile_menu_close_3.addEventListener('click', function() {mobile_menu_toggle(3)}
 mobile_menu_opener_4.addEventListener('click', function() {mobile_menu_toggle(4)});
 mobile_menu_close_4.addEventListener('click', function() {mobile_menu_toggle(4)});
 
-mobile_menu_opener_5.addEventListener('click', function() {mobile_menu_toggle(5)});
-mobile_menu_close_5.addEventListener('click', function() {mobile_menu_toggle(5)});
-
-mobile_menu_opener_6.addEventListener('click', function() {mobile_menu_toggle(6)});
-mobile_menu_close_6.addEventListener('click', function() {mobile_menu_toggle(6)});
-
 function mobile_menu_toggle(x) {
     switch (x) {
         case 1:
@@ -74,12 +62,6 @@ function mobile_menu_toggle(x) {
             break;
         case 4:
             mobile_menu_4.classList.toggle('mobile-lesson-menu-active');
-            break;
-        case 5:
-            mobile_menu_5.classList.toggle('mobile-lesson-menu-active');
-            break;
-        case 6:
-            mobile_menu_6.classList.toggle('mobile-lesson-menu-active');
             break;
         default:
             console.log("default");

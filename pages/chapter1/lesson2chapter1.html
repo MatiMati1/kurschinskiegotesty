@@ -20,9 +20,6 @@
         </div>
         <nav> <!--menu w headerze treść przykładowa-->
             <ul class="header-menu">
-                <li class="header-menu-item">
-                    <a href="#">O Kursie</a>
-                </li>
                 <li class="special-button side-menu-toggle">
                     <a href="#">Lekcje</a>
                 </li>
@@ -63,27 +60,6 @@
         </div>
         <div class="lesson-menu-container" style="grid-area: chapter4;">
             <p class="chapter-header mobile-menu-opening-4">Rozdział 4</p>
-            <ul class="side-menu-lessons-list">
-                <li><a href="#">lekcja 1</a></li>
-                <li><a href="#">lekcja 2</a></li>
-                <li><a href="#">lekcja 3</a></li>
-                <li><a href="#">lekcja 4</a></li>
-                <li><a href="#">lekcja 5</a></li>
-            </ul>
-        </div>
-        <div class="lesson-menu-container" style="grid-area: chapter5;">
-            <p class="chapter-header mobile-menu-opening-5">Rozdział 5</p>
-            <ul class="side-menu-lessons-list">
-                <li><a href="#">lekcja 1</a></li>
-                <li><a href="#">lekcja 2</a></li>
-                <li><a href="#">lekcja 3</a></li>
-                <li><a href="#">lekcja 4</a></li>
-                <li><a href="#">lekcja 5</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="lesson-menu-container" style="grid-area: chapter6;">
-            <p class="chapter-header mobile-menu-opening-6">Rozdział 6</p>
             <ul class="side-menu-lessons-list">
                 <li><a href="#">lekcja 1</a></li>
                 <li><a href="#">lekcja 2</a></li>
@@ -139,163 +115,72 @@
             <li><a href="#">lekcja 5</a></li>
         </ul>
     </div>
-    <div class="mobile-lesson-menu mobile-menu-5">
-        <img src="../../icons/close_icon.svg" alt="ikona zamkniecia" class="mobile-menu-close-icon mobile-menu-close-icon-5">
-        <p class="chapter-header">Rozdział 5</p>
-        <ul class="side-menu-lessons-list">
-            <li><a href="#">lekcja 1</a></li>
-            <li><a href="#">lekcja 2</a></li>
-            <li><a href="#">lekcja 3</a></li>
-            <li><a href="#">lekcja 4</a></li>
-            <li><a href="#">lekcja 5</a></li>
-        </ul>
-    </div>
-    <div class="mobile-lesson-menu mobile-menu-6">
-        <img src="../../icons/close_icon.svg" alt="ikona zamkniecia" class="mobile-menu-close-icon mobile-menu-close-icon-6">
-        <p class="chapter-header">Rozdział 6</p>
-        <ul class="side-menu-lessons-list">
-            <li><a href="#">lekcja 1</a></li>
-            <li><a href="#">lekcja 2</a></li>
-            <li><a href="#">lekcja 3</a></li>
-            <li><a href="#">lekcja 4</a></li>
-            <li><a href="#">lekcja 5</a></li>
-        </ul>
-    </div>
-    <div class="forward-backward-buttons-container">
-        <div class="forward-backward-buttons">
-            <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
-            <a href="lesson1chapter1.html">Poprzednia lekcja</a>
+    <div class="lesson-buttons">
+        <div class="forward-backward-buttons-container">
+            <div class="forward-backward-buttons">
+                <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
+                <a href="lesson1chapter1.html">Poprzednia lekcja</a>
+            </div>
+            <div class="forward-backward-buttons">
+                <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
+                <a href="lesson1chapter1.html">Poprzednia lekcja</a>
+            </div>
         </div>
-        <div class="forward-backward-buttons">
-            <a href="lesson3chapter1.html">Następna lekcja</a>
-            <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
-        </div>
-    </div>
-    <article class="lesson">
-        <div class="lesson-subject">Słownictwo</div>
-        <div class="chapter-lesson-number">Rozdział 1 Lekcja 2</div>
-        <main class="main-lesson-text">
-            <div id="container">
+        <article class="lesson">
+            <div class="lesson-subject">Słownictwo</div>
+            <div class="chapter-lesson-number">Rozdział 1 Lekcja 2</div>
+            <main class="main-lesson-text">
                 <div class="znaczek">
-                <div id="buttons" onclick="playSound()">你好</div>
-                
-                nǐ hǎo - Cześć
-                <br><br>
-                <hr>
-                
-              <div id="buttons" onclick="playSound1()">再见</div>zài jiàn - Cześć(Na pożegnanie)
-                <br><br>
-                <hr>
-                
-              <div id="buttons" onclick="playSound2()">我</div>wǒ - Ja
-                <br><br><hr>
-                
-              <div id="buttons" onclick="playSound3()">你</div>nǐ - Ty
-                <br><br><hr>
-              <div id="buttons" onclick="playSound4()">他</div>tā - On
-                <br><br><hr>
-                
-              <div id="buttons" onclick="playSound4()">她</div>tā - Ona</div>
-              </div>
-
-            <li class="special-button side-menu-toggle">
-                <a href="../../quiz/quiz.html">QUIZ</a>
-            </li>
-        </main>
-    </article>
-    <div class="forward-backward-buttons-container">
-        <div class="forward-backward-buttons">
-            <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
-            <a href="lesson1chapter1.html">Poprzednia lekcja</a>
-        </div>
-        <div class="forward-backward-buttons">
-            <a href="lesson3chapter1.html">Następna lekcja</a>
-            <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
+                    <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson2/ni3hao3.mp3')">你好</div>
+                    <p>nǐ hǎo - Cześć</p>
+                    <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson2/zai4jian4.mp3')">再见</div>
+                    <p>zài jiàn - Cześć(Na pożegnanie)</p>
+                    <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson2/ni3.mp3')">你</div>
+                    <p>nǐ - Ty</p>
+                    <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson2/ta1.mp3')">他</div>
+                    <p>tā - On</p>
+                    <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson2/ta1.mp3')">她</div>
+                    <p>tā - Ona</p>
+                </div>
+                <li class="quiz-button">
+                    <a href="../../quiz/quiz.html">QUIZ</a>
+                </li>
+            </main>
+        </article>
+        <div class="forward-backward-buttons-container">
+            <div class="forward-backward-buttons">
+                <a href="lesson3chapter1.html">Następna lekcja</a>
+                <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
+            </div>
+            <div class="forward-backward-buttons">
+                <a href="lesson3chapter1.html">Następna lekcja</a>
+                <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
+            </div>
         </div>
     </div>
-
+    <footer>
+        Nasze Social Media:
+        &nbsp;
+        <br class="br-footer">
+        <a href="https://www.facebook.com/profile.php?id=61555273390318">
+            <img src="../../images/logo_fb.png" alt="Facebook">
+             - Kurs Chińskiego-zhongwenke
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br class="br-footer">
+        <a href="https://www.youtube.com/@ZhongWenKeKursChinskiego">
+            <img src="../../images/logo_yt2.png" alt="YouTube">
+             - zhongwenke
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br class="br-footer">
+        <a href="https://www.tiktok.com/@zhongwenke?is_from_webapp=1&sender_device=pc&fbclid=IwAR2XTk74x_FrHBeuKZ-hqi53wG7LEf8BPx6uREMUuQVhSY4xHJJB_gREJeA">
+            <img src="../../images/logo_tt.png" alt="TikTok">
+             - zhongwenke
+        <br><br>
+        ZhongWenKe Kurs Chinskiego Online za darmo.<br class="br-footer"> Stworzony jako projekt <i><a href="https://zwolnienizteorii.pl">zwolnieni z teorii</a></i>
+    </footer>
     <script src="../../script.js"></script>
-    <script>
-        //***************************************//
-        var ni3hao3 = new Audio('../../sounds/chapter1/lesson2/ni3hao3.mp3');
-        var isPlaying = false;
-      
-        function playSound() {
-          if (!isPlaying) {
-            isPlaying = true;
-            ni3hao3.currentTime = 0;
-            ni3hao3.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-       
-      
-        //***************************************//
-      
-        var zai4jian4 = new Audio('../../sounds/chapter1/lesson2/zai4jian4.mp3');
-      
-      
-        function playSound1() {
-          if (!isPlaying) {
-            isPlaying = true;
-            zai4jian4.currentTime = 0;
-            zai4jian4.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-        
-      
-      //***************************************//
-      
-        var wo3 = new Audio('../../sounds/chapter1/lesson2/wo3.mp3');
-      
-      
-        function playSound2() {
-          if (!isPlaying) {
-            isPlaying = true;
-            wo3.currentTime = 0;
-            wo3.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-      
-      //***************************************//
-      
-        var ni3 = new Audio('../../sounds/chapter1/lesson2/ni3.mp3');
-      
-      
-        function playSound3() {
-          if (!isPlaying) {
-            isPlaying = true;
-            ni3.currentTime = 0;
-            ni3.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-        //***************************************//
-      
-      var ta1 = new Audio('../../sounds/chapter1/lesson2/ta1.mp3');
-      
-      
-        function playSound4() {
-          if (!isPlaying) {
-            isPlaying = true;
-            ta1.currentTime = 0;
-            ta1.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-    </script>
 </body>
 
 </html>

@@ -1,11 +1,17 @@
+.lesson-buttons {
+    display: grid;
+    grid-template-columns: 28% 44% 28%;
+}
+
 .forward-backward-buttons-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
 .forward-backward-buttons {
     padding: 7px 7px;
-    margin: 0 clamp(5px, 40px, 45px);
     font-size: clamp(15px, 0.85vw, 30px);
     color: #f42e2e;
 }
@@ -21,14 +27,17 @@
 }
 
 .lesson {
-    height: 100%;
-    margin: 0 27.5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 30px;
+    margin: 30px 0 30px 0;
+    padding: 15px 20px 25px 20px;
     display: flex;
     flex-direction: column;
 }
 
 .lesson-subject {
-    font-size: max(30px, 3.5vh);
+    font-size: max(35px, 3.5vh);
     letter-spacing: 0.25vw;
     margin: 1.5% 0;
 }
@@ -40,48 +49,57 @@
 }
 
 .main-lesson-text {
-    font-size: clamp(18px, 1.1vw, 30px);
+    font-size: clamp(16px, 1.1vw, 30px);
     line-height: 24px;
     letter-spacing: 0.03vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .lesson-image {
     margin: 30px 50px;
-    justify-self: center;
 }
 
 .lesson-table {
-    margin: 70px 100px;
-    justify-self: center;
-    font-family: 'Roboto Mono', monospace;
+    margin: 20px 100px;
 }
 
 .lesson-table,
 tr,
 td {
-    border: 1px solid;
-    border-collapse: collapse;
+    border: none;
 }
 
-.sound-button img {
+.sound-button {
     cursor: pointer;
-    position: relative;
-    top: 4px;
-    left: 12px;
+    text-align: center;
+    width: fit-content;
+    padding: 6px 12px;
 }
 
-.sound-double-letters img {
-    left: 0px;
+.sound-button:hover {
+    background-color: lightgray;
+    color: black;
+    border-radius: 8px;
 }
 
 @media (max-width: 660px) {
-    .forward-backward-buttons-container {
+    .lesson-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forward-backward-buttons:nth-child(even) {
         display: none;
     }
 
     .lesson {
-        margin:0px 5%;
+        margin:10px 3%;
+    }
+
+    .lesson-image {
+        width: 340px;
+        height: 180px;
     }
 }

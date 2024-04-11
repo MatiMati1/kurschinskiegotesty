@@ -20,9 +20,6 @@
         </div>
         <nav> <!--menu w headerze treść przykładowa-->
             <ul class="header-menu">
-                <li class="header-menu-item">
-                    <a href="#">O Kursie</a>
-                </li>
                 <li class="special-button side-menu-toggle">
                     <a href="#">Lekcje</a>
                 </li>
@@ -63,27 +60,6 @@
         </div>
         <div class="lesson-menu-container" style="grid-area: chapter4;">
             <p class="chapter-header mobile-menu-opening-4">Rozdział 4</p>
-            <ul class="side-menu-lessons-list">
-                <li><a href="#">lekcja 1</a></li>
-                <li><a href="#">lekcja 2</a></li>
-                <li><a href="#">lekcja 3</a></li>
-                <li><a href="#">lekcja 4</a></li>
-                <li><a href="#">lekcja 5</a></li>
-            </ul>
-        </div>
-        <div class="lesson-menu-container" style="grid-area: chapter5;">
-            <p class="chapter-header mobile-menu-opening-5">Rozdział 5</p>
-            <ul class="side-menu-lessons-list">
-                <li><a href="#">lekcja 1</a></li>
-                <li><a href="#">lekcja 2</a></li>
-                <li><a href="#">lekcja 3</a></li>
-                <li><a href="#">lekcja 4</a></li>
-                <li><a href="#">lekcja 5</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="lesson-menu-container" style="grid-area: chapter6;">
-            <p class="chapter-header mobile-menu-opening-6">Rozdział 6</p>
             <ul class="side-menu-lessons-list">
                 <li><a href="#">lekcja 1</a></li>
                 <li><a href="#">lekcja 2</a></li>
@@ -139,200 +115,82 @@
             <li><a href="#">lekcja 5</a></li>
         </ul>
     </div>
-    <div class="mobile-lesson-menu mobile-menu-5">
-        <img src="../../icons/close_icon.svg" alt="ikona zamkniecia" class="mobile-menu-close-icon mobile-menu-close-icon-5">
-        <p class="chapter-header">Rozdział 5</p>
-        <ul class="side-menu-lessons-list">
-            <li><a href="#">lekcja 1</a></li>
-            <li><a href="#">lekcja 2</a></li>
-            <li><a href="#">lekcja 3</a></li>
-            <li><a href="#">lekcja 4</a></li>
-            <li><a href="#">lekcja 5</a></li>
-        </ul>
-    </div>
-    <div class="mobile-lesson-menu mobile-menu-6">
-        <img src="../../icons/close_icon.svg" alt="ikona zamkniecia" class="mobile-menu-close-icon mobile-menu-close-icon-6">
-        <p class="chapter-header">Rozdział 6</p>
-        <ul class="side-menu-lessons-list">
-            <li><a href="#">lekcja 1</a></li>
-            <li><a href="#">lekcja 2</a></li>
-            <li><a href="#">lekcja 3</a></li>
-            <li><a href="#">lekcja 4</a></li>
-            <li><a href="#">lekcja 5</a></li>
-        </ul>
-    </div>
-    <div class="forward-backward-buttons-container">
+    <div class="lesson-buttons">
+      <div class="forward-backward-buttons-container">
         <div class="forward-backward-buttons">
             <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
             <a href="lesson2chapter1.html">Poprzednia lekcja</a>
         </div>
         <div class="forward-backward-buttons">
-            <a href="lesson4chapter1.html">Następna lekcja</a>
-            <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
+          <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
+          <a href="lesson2chapter1.html">Poprzednia lekcja</a>
         </div>
-    </div>
-    <article class="lesson">
+      </div>
+      <article class="lesson">
         <div class="lesson-subject">Słownictwo</div>
         <div class="chapter-lesson-number">Rozdział 1 Lekcja 3</div>
         <main class="main-lesson-text">
-            <div id="container">
-                <div class="znaczek">
-                <div id="buttons" onclick="playSound()">叫</div>jiào  -   Nazywać
-                <br><br>
-                <hr>
-              <div id="buttons" onclick="playSound1()">名字</div>míng zi   -   Imię
-                <br><br>
-                <hr>
-              <div id="buttons" onclick="playSound2()">什么</div>shèn me   -   Partykuła pytająca
-                <br><br>
-                <hr>
-              <div id="buttons" onclick="playSound3()">的</div>de  -   Partykuła dzierżawcza
-                <br><br>
-                <hr>
-              <div id="buttons" onclick="playSound4()">是</div>shì -   Być
-                <br><br>
-                <hr>
-                <div id="zdania">我叫Mateusz 
-                  <br><br>wǒ jiào Mateusz<br>
-                  Nazywam sie Mateusz
-                </div>
-                <br><br>
-               <div id="zdania">我的名字是Szymon
+          <div id="container">
+            <div class="znaczek">
+              <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson3/jiao4.mp3')">叫</div><p>jiào  -   Nazywać</p>
+              <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson3/ming2zi.mp3')">名字</div><p>míng zi   -   Imię</p>
+              <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson3/shen4me.mp3')">什么</div><p>shèn me   -   Partykuła pytająca</p>
+              <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson3/de.mp3')">的</div><p>de  -   Partykuła dzierżawcza</p>
+              <div id="buttons" onclick="togglesound('../../sounds/chapter1/lesson3/shi4.mp3')">是</div><p>shì -   Być</p>
+            </div>
+            <div class="zadania-container">
+              <div id="zdania">
+                我叫 Mateusz 
+                wǒ jiào Mateusz<br>
+                Nazywam sie Mateusz
+              </div>
+              <div id="zdania">
+                我的名字是Szymon
                 <br><br>wǒ de míng zi shì Szymon<br>
                 Moje imię to Szymon
-               </div>
-               <br><br> <br><br>
-               <div id="zdania">你叫什么名字?<br><br>
-                nǐ jiào shèn me míng zi?<br>
-              Jak sie nazywasz></div>
               </div>
+              <div id="zdania">
+                你叫什么名字?<br><br>
+                nǐ jiào shèn me míng zi?<br>
+                Jak sie nazywasz
+              </div>
+            </div>
+          </div>
         </main>
     </article>
-    <div class="forward-backward-buttons-container">
+      <div class="forward-backward-buttons-container">
         <div class="forward-backward-buttons">
-            <img src="../../icons/arrow_back.svg" alt="istrzałka w lewo" class="forward-backward-arrows">
-            <a href="lesson2chapter1.html">Poprzednia lekcja</a>
+          <a href="lesson4chapter1.html">Następna lekcja</a>
+          <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
         </div>
         <div class="forward-backward-buttons">
             <a href="lesson4chapter1.html">Następna lekcja</a>
             <img src="../../icons/arrow_forward.svg" alt="istrzałka w prawo" class="forward-backward-arrows">
         </div>
     </div>
-
+    </div>
+    <footer>
+        Nasze Social Media:
+        &nbsp;
+        <br class="br-footer">
+        <a href="https://www.facebook.com/profile.php?id=61555273390318">
+            <img src="../../images/logo_fb.png" alt="Facebook">
+             - Kurs Chińskiego-zhongwenke
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br class="br-footer">
+        <a href="https://www.youtube.com/@ZhongWenKeKursChinskiego">
+            <img src="../../images/logo_yt2.png" alt="YouTube">
+             - zhongwenke
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br class="br-footer">
+        <a href="https://www.tiktok.com/@zhongwenke?is_from_webapp=1&sender_device=pc&fbclid=IwAR2XTk74x_FrHBeuKZ-hqi53wG7LEf8BPx6uREMUuQVhSY4xHJJB_gREJeA">
+            <img src="../../images/logo_tt.png" alt="TikTok">
+             - zhongwenke
+        <br><br>
+        ZhongWenKe Kurs Chinskiego Online za darmo.<br class="br-footer"> Stworzony jako projekt <i><a href="https://zwolnienizteorii.pl">zwolnieni z teorii</a></i>
+    </footer>
     <script src="../../script.js"></script>
-    <script>
-        //***************************************//
-        var jiao4 = new Audio('../../sounds/chapter1/lesson3/jiao4.mp3');
-        var isPlaying = false;
-      
-        function playSound() {
-          if (!isPlaying) {
-            isPlaying = true;
-            jiao4.currentTime = 0;
-            jiao4.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-       
-      
-        //***************************************//
-      
-        var ming2zi = new Audio('../../sounds/chapter1/lesson3/ming2zi.mp3');
-      
-      
-        function playSound1() {
-          if (!isPlaying) {
-            isPlaying = true;
-            ming2zi.currentTime = 0;
-            ming2zi.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-        
-      
-      //***************************************//
-      
-        var shen4me = new Audio('../../sounds/chapter1/lesson3/shen4me.mp3');
-      
-      
-        function playSound2() {
-          if (!isPlaying) {
-            isPlaying = true;
-            shen4me.currentTime = 0;
-            shen4me.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-      
-      //***************************************//
-      
-        var de = new Audio('../../sounds/chapter1/lesson3/de.mp3');
-      
-      
-        function playSound3() {
-          if (!isPlaying) {
-            isPlaying = true;
-            de.currentTime = 0;
-            de.play();
-            isPlaying = false;
-            
-          }
-        }
-      
-        //***************************************//
-      
-      var shi4 = new Audio('../../sounds/chapter1/lesson3/shi4.mp3');
-      
-      
-        function playSound4() {
-          if (!isPlaying) {
-            isPlaying = true;
-            shi4.currentTime = 0;
-            shi4.play();
-            isPlaying = false;
-            
-          }
-        }
-        
-        //***************************************//
-      
-        const translations = {
-          '我': 'wǒ/Ja',
-          '你': 'nǐ/Ty',
-          '他': 'tā/On,Ona',
-          '叫':  'jiào/Nazywać',
-          '名字': 'míng zi/Imię',
-          '什么': 'shèn me/Partykuła pytająca',
-          '的': 'de/Partykuła dzierżawcza',
-          '是': 'shì/Być'
-          // Dodaj inne tłumaczenia, jakie są ci potrzebne
-        };
-      
-        function showTranslation(word, container) {
-          const translation = getTranslation(word);
-          const translationDiv = container.querySelector('.translation');
-          translationDiv.innerText = translation;
-          translationDiv.style.display = 'block';
-        }
-      
-        function hideTranslation() {
-          const translationDivs = document.querySelectorAll('.translation');
-          translationDivs.forEach(div => div.style.display = 'none');
-        }
-      
-        function getTranslation(word) {
-          // Sprawdzenie, czy tłumaczenie istnieje w obiekcie
-          // Jeśli nie, zwróć domyślną wiadomość
-          return translations[word] || 'Brak tłumaczenia';
-        }
-      
-      </script>
 </body>
-
 </html>
